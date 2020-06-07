@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML =
+                    document.getElementById("user_input").value;
+    }
+function showInput2() {
+	document.getElementById('display2').innerHTML =
+  document.getElementById("user_input2").value;
+}
+  </script>
+<TITLE>Form example</TITLE>
+</HEAD>
+<BODY>
+<center>
+<table cellpadding="10">
+<tbody><tr><td colspan="2">
+<form>
+    <label><b>Enter a Username</b></label>
+    <input type="text" name="message" id="user_input">
+	<br>
+	Enter a password:
+	<input type="password" Name = "secret" size= 10 id = "user_input2">
+  </form>
+
+  <input type="submit" onclick="showInput();showInput2();"><br/>
+  <label>Your username: </label>
+  <p><span id='display'></span></p>
+Your password:
+  <p><span id='display2'></span></p>
+</td></tr></tbody></table>
+</center>
+</BODY>
+</HTML>
